@@ -1,0 +1,15 @@
+.about {
+    background-color: $quaternary;
+}
+
+.about .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0;
+}
+
+.about p {
+    width: 81%;
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+
+.contentContainer {
+    display:flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+    
+}
+
+.headerNav li a {
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+header {
+    background-image: url(/images/home-image-1.jpg);
+    background-position: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+
+.headerNav li:first-child {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 2.4rem;
+    text-decoration: none;
+    margin: 0;
+    list-style: none;
+}
+
+h1 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16.6rem;
+    margin: 249px 444px;
+    line-height: 14rem;
+}
+
+.heading {
+    color: $secondary;
+}
