@@ -1,0 +1,41 @@
+.founder .wrapper {
+    display: flex;
+    padding-top: 150px;
+    justify-content: space-between;
+    width: 100%;
+    
+   
+
+    }
+
+
+    .founderImage {
+        width: 27%;
+        padding-right: 75px;
+        img {
+            width: 100%;
+            box-shadow: 20px 20px $secondary;
+            
+        }
+    }
+
+    .founderContainer {
+        width: 70%;
+    }
+
+    h4 {
+        font-family: $headingFont;
+        font-size: 4.2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+
+    .bottom .flexContainer {
+        justify-content: space-evenly;
+        padding: 100px 0;
+    }
+
+    .bottom {
+        background-color: #fff;
+    }

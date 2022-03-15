@@ -1,0 +1,37 @@
+.blog .flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 100px;
+        .flexContainers {
+            width: 50%;
+            justify-content: space-evenly;
+            padding-right: 75px;
+            position: relative;
+        
+        }
+    }
+
+    .yellowCircle {
+        background-color: $secondary;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 32px;
+        left: -59px;
+        
+        i {
+            position: absolute;
+            font-size: 2rem;
+            top: 8px;
+            right: 11px;
+        
+        }
+        
+    }
+
+    .window {
+        background-image: url(/images/banner-image.jpg);
+        height: 400px;
+    }
