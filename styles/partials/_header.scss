@@ -53,3 +53,32 @@ h1 {
 .heading {
     color: $secondary;
 }
+
+// BLOG PAGE
+
+.blogging {
+    background-image: url(/images/blog-header-1.jpg);
+    height: 500px;
+    background-repeat: none;
+    background-position: contain;
+    position: relative;
+    h1 {
+        margin: 0;
+        color: $secondary;
+        left: 143px;
+        bottom: 118px;
+        font-size: 11rem;
+        position: absolute;
+        
+    }
+    
+}
+
+.headerNav {
+    background-color: black;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-left: 50px;
+}
+

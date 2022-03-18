@@ -1,0 +1,157 @@
+.recentContainer {
+    display:flex;
+    flex-direction: column;
+    width: 31%;
+    position: absolute;
+    left: 0;
+    top:650px;
+
+    h3,
+    p,
+    ul {
+        margin-left: 150px;
+    }
+    em {
+        color: $tertiary;
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+    }
+    ul {
+        list-style: none;
+        position: relative;
+        
+        li{
+            font-size: 2rem;
+            padding: 5px;
+            font-family: 'Lato', sans-serif;
+            position: relative;
+    
+
+        }
+
+
+        }
+    li::before {
+            content: '•';
+            position: absolute;
+            color: $tertiary;
+            height: 10px;
+            font-size: 2rem;
+            left: -21px;
+
+    }
+    }
+    
+
+
+.missionContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 246px;
+    right: 117px;
+    width: 50%;
+    
+    padding-left: 20px;
+    > img {
+        box-shadow: -20px 20px $secondary;
+
+        
+    }
+    h4 {
+        margin-top: 40px;
+    }
+    
+    }
+
+    .boxContainer {
+        box-shadow: -5px 5px $secondary;
+        margin-left: -15px;
+        h2 {
+            margin-top: 100px;
+        }
+        h2,
+        p {
+            padding-left: 40px;
+        }
+        .yousra {
+            font-style: italic;
+            color: $tertiary;
+        }
+
+        
+    }
+
+
+.mission .flexContainer {
+    justify-content: space-between;
+}
+
+.julia,
+.jeremy {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+    img {
+        width: 100%;
+        height: 50%;
+    }
+    .jeremyContainer {
+        width: 80%;
+    }
+    .jj {
+        margin: 0;
+        color: $primary;
+    }
+
+    }
+    
+
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    label {
+        display: flex;
+    }
+    input[type=email],
+    input[type=text] {
+        width: 50%;
+        border: none;
+        border-bottom: 2px solid $tertiary;
+        
+        
+        
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        padding: 50px 0 30px 30px;
+    
+    }
+
+    textarea {
+        border: none;
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        padding: 50px 0 30px 30px;
+        border: 2px solid $tertiary;
+        margin-top: 40px;
+
+    }
+    button {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    
+
+    }
+    
+
+
+.jeremyContainer {
+    display: flex;
+    flex-direction: column;
+}
