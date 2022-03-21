@@ -326,6 +326,7 @@ footer p {
   list-style: none;
   text-transform: uppercase;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 a:focus,
@@ -417,6 +418,10 @@ h1 {
   font-size: 11rem;
   color: #f8e71c;
   padding: 250px 0 0 125px;
+}
+
+.contactNav ul {
+  background-color: black;
 }
 
 .about {
@@ -996,5 +1001,83 @@ fieldset button {
   }
   .founder .wrapper .founderContainer p {
     text-align: center;
+  }
+}
+@media (max-width: 940px) {
+  .contactHeader h1 {
+    height: auto;
+    font-size: 10rem;
+  }
+}
+@media (max-width: 940px) {
+  .blogging h1 {
+    bottom: 314px;
+  }
+
+  .missionContainer .jeremy .jeremyContainer,
+.missionContainer .julia .jeremyContainer {
+    width: 70%;
+  }
+  .missionContainer .jeremy img,
+.missionContainer .julia img {
+    height: 33%;
+  }
+  .missionContainer .blogFieldset .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .missionContainer .blogFieldset .flexContainer input[type=text],
+.missionContainer .blogFieldset .flexContainer input[type=email] {
+    width: 95%;
+  }
+
+  .recentContainer h3,
+.recentContainer p,
+.recentContainer ul {
+    margin-left: 30px;
+  }
+
+  .blogFooter {
+    margin-top: 2700px;
+  }
+}
+@media (max-width: 768px) {
+  .mission .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .mission .flexContainer .missionContainer {
+    width: 90%;
+    top: 0;
+    right: 0;
+    position: relative;
+  }
+  .mission .flexContainer .missionContainer h2 {
+    font-size: 4.8rem;
+  }
+  .mission .flexContainer .recentContainer {
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 95%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mission .flexContainer .recentContainer > img {
+    display: none;
+  }
+  .mission .flexContainer .recentContainer h3,
+.mission .flexContainer .recentContainer p,
+.mission .flexContainer .recentContainer ul {
+    margin-left: 0;
+  }
+
+  .blogFooter {
+    margin-top: 100px;
   }
 }

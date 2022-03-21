@@ -23,7 +23,7 @@
     list-style: none;
     text-transform: uppercase;
     margin-top: 10px;
-    // cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -129,4 +129,9 @@ h1 {
         color: $secondary;
         padding: 250px 0 0 125px;
     }
+}
+
+.contactNav ul {
+    background-color: black;
+
 }
