@@ -1,0 +1,63 @@
+.email .flexContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .emailContainer {
+        width: 25%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+            width: 50%;
+            margin-top: 100px;
+            
+            i {
+            color: $tertiary;
+            font-size: 3rem;
+        }
+        }
+        h5 {
+            font-size: 3rem;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: bold;
+        }
+        p {
+            margin: 0;
+            
+        }
+        .info {
+            margin-bottom: 500px;
+        }
+        }
+    }
+    .emailContainer p:last-child{
+        margin-bottom: 200px;
+    }
+    .contactFieldset {
+        width: 55%;
+        position: absolute;
+        right: 85px;
+        top: 250px;
+        box-shadow: -20px 20px $secondary;
+        background: white;
+        
+        input[type=text],
+        input[type=email] {
+            width: 43%;
+        }
+        input[type=email] {
+            margin-right: 50px;
+        }
+        input[type=text] {
+            margin-left: 10px;
+        }
+        textarea {
+            width: 90%;
+            padding-left: 25px;
+            margin-left: 30px;
+        }
+        button {
+            margin-bottom: 40px;
+        }
+    }

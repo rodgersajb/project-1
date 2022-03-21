@@ -28,7 +28,10 @@
     
 
         }
-
+    img {
+        width: 0;
+        width: 1000px;
+    }
 
         }
     li::before {
@@ -118,7 +121,7 @@ fieldset {
     }
     input[type=email],
     input[type=text] {
-        width: 50%;
+        width: 45%;
         border: none;
         border-bottom: 2px solid $tertiary;
         

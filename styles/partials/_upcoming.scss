@@ -9,30 +9,46 @@
     width: 100%;
 }
 
+.shadowContainer,
 .container,
 .imgContainer {
     width: 50%;
     flex-direction: column;
-    padding-right: 200px;
+    padding-right: 100px;
     display: flex;
     position: relative;
 }
 
+.widthParagraph {
+    width: 75%;
+    text-align: end;
+}
 // .imgContainer img {
 //     width: 1000px;
 // }
+
+.shadowContainer > img {
+    position: absolute;
+    box-shadow: -20px 20px $secondary;
+    bottom: -197px;
+    right: 0;
+    width: 758px;
+    height: 400px;
+}
 
 .container:nth-of-type(1) {
     
     align-items: flex-end;
 }
 
-.upcoming img:first-of-type {
+.imgContainer > img {
     position: absolute;
     box-shadow: 20px 20px $secondary;
     object-fit: cover;
-    top: 0;
-    left: 0;
+    top: -97px;
+    left: -120px;
+    width: 750px;
+    height: 400px;
     
 
 }
