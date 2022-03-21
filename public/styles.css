@@ -340,6 +340,17 @@ header {
   background-repeat: no-repeat;
   z-index: 0;
 }
+header .hamburger {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+}
+header .hamburger i {
+  color: #fff;
+  font-size: 2rem;
+}
 
 .headerNav li:first-child {
   font-family: "Josefin Sans", sans-serif;
@@ -913,6 +924,16 @@ fieldset button {
   }
 }
 @media (max-width: 480px) {
+  header {
+    height: auto;
+  }
+  header .headerNav {
+    display: none;
+  }
+  header .hamburger {
+    visibility: visible;
+  }
+
   h2 {
     text-align: center;
   }
@@ -926,6 +947,7 @@ fieldset button {
 
   h1 {
     font-size: 9rem;
+    margin-top: 100px;
   }
 
   .container {
@@ -968,6 +990,9 @@ fieldset button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .founder .wrapper .founderContainer h4 {
+    text-align: center;
   }
   .founder .wrapper .founderContainer p {
     text-align: center;

@@ -39,6 +39,17 @@ header {
     height: 100vh;
     background-repeat: no-repeat;
     z-index: 0;
+    .hamburger {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        i {
+            color: #fff;
+            font-size: 2rem;
+        }
+    }
     
     
     
