@@ -1,15 +1,107 @@
 @media (max-width: 940px) {
-    .contactHeader
+    .contactHeader {
+        height: auto;    
         h1 {
-            height: auto;
-            font-size: 10rem;
+            // height: auto;
+            font-size: 7rem;
+            line-height: 7rem;
+            padding: 125px 0 0 125px;
+            height: 400px;
+            width: 80%;
         }
+    }
+    .contactFieldset {
+        top: 300px;
+    }
+    
+
 }
 
 @media (max-width: 768px) {
-    
+    .contactFieldset {
+        right: 25px;
+        .flexContainer {
+            align-items: flex-start;
+        
+            input[type=text],
+            input[type=email] {
+            width: 85%;
+            margin: 0;
+            padding: 0;
+            padding: 40px 0 20px 0
+        }
+            input[type=email] {
+                margin-left: 31px;
+            }
+        
+        }
+        
+    }
 }
 
 @media (max-width: 480px) {
+    .contactHeader {
+        background-size: auto;
+        i {
+            position: absolute;
+            color: $secondary;
+            font-size: 3rem;
+            top: 20px;
+            right: 20px;
+        }
+        h1 {
+            font-size: 6rem;
+        }
+        
+    }
+    .social {
+        i {
+            padding-right: 10px;
+        }        
+    }
+    .email .flexContainer:first-child {
+        flex-direction: column-reverse;
+    }
+    .contactFieldset {
+        top: 0;
+        right: 0;
+        position: relative;
+        width: 80%;
+        
+    }
+    input[type=text],
+    input[type=email] {
+            margin: 0;
+            padding: 0;
+        }
     
+        
+    // .emailContainer {
+    //     width: 50%;
+    // }
+
+    .email .flexContainer .emailContainer {
+        width: 50%;
+    }
+
+    .contactFieldset .flexContainer input[type=text] {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .contactHeader h1 {
+        padding: 125px 0 0 75px;
+    }
+    .contactFieldset button {
+        margin-left: 20px;
+    }
+
+    .email .flexContainer .emailContainer {
+        width: 69%;
+    }
+
+    .social i {
+        padding-right: 30px;
+    }
 }

@@ -95,9 +95,12 @@
         .headerNav {
             display: none;
         }
-        .hamburger {
-            visibility: visible;
-
+        i {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: $secondary;
+            font-size: 3rem;
         }
     }
     h2 {
@@ -143,5 +146,35 @@
                 text-align: center;
             }
             }
+        }
+        .window {
+            height: 100px;
+            background-size: contain;
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        h1 {
+            font-size: 6rem;
+            line-height: 10rem;
+        }
+        .container h3 {
+            font-size: 2.7rem;
+        }
+        .discover {
+            text-align: center;
+        }
+        .flexContainers h3 {
+            font-size: 2.2rem;
+            
+        }
+        .yellowCircle {
+            top: 20px;
+            
+        }
+        .window {
+            height: 100px;
+            background-size: contain;
         }
     }

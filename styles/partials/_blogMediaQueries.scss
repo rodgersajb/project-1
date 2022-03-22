@@ -35,9 +35,7 @@
 }
     
 @media (max-width: 768px) {
-    .blogging {
-        
-    }
+    
     .mission .flexContainer {
         flex-direction: column-reverse;
         .missionContainer {
@@ -69,4 +67,65 @@
     .blogFooter {
         margin-top: 100px;
     } 
-}   
+}  
+
+@media (max-width: 480px) {
+    .contactNav ul {
+        display: none;
+    }
+    .blogging {
+        height: 100vw;
+        background-size: auto;
+        position: relative;
+        i {
+            color: $secondary;
+            font-size: 3rem;
+            right: 0;
+            position: absolute;
+            padding: 20px 20px 0 0;
+        }
+        
+        h1 {
+            font-size: 8rem;
+            margin: 0 auto;
+            bottom: 100px;
+            
+            // position: relative;
+        }
+    }
+    .mission {
+        padding-top: 100px;
+        .missionContainer{
+            .jeremy,
+            .julia {
+                img {
+                    height: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .blogging h1 {
+        left: 80px;
+    }
+
+    .mission .missionContainer .jeremy img,
+    .mission .missionContainer .julia img {
+        height: 15%;
+        padding-right: 10px;
+    }
+    .julia .jj,
+    .jeremy .jj {
+        font-size: 2.4rem;
+    }
+    .missionContainer .blogFieldset .flexContainer input[type=text],
+    .missionContainer .blogFieldset .flexContainer input[type=email]    {
+        width: 100%;
+    }
+    .blogFieldset textarea {
+        width: 100%;
+    }
+
+}

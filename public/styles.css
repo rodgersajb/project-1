@@ -328,10 +328,18 @@ footer p {
   margin-top: 10px;
   cursor: pointer;
 }
+.headerNav li a:focus, .headerNav li a:hover {
+  color: #f8e71c;
+}
 
 a:focus,
 a:hover {
   color: #f8e71c;
+}
+
+a {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 header {
@@ -935,8 +943,12 @@ fieldset button {
   header .headerNav {
     display: none;
   }
-  header .hamburger {
-    visibility: visible;
+  header i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #f8e71c;
+    font-size: 3rem;
   }
 
   h2 {
@@ -1002,11 +1014,138 @@ fieldset button {
   .founder .wrapper .founderContainer p {
     text-align: center;
   }
+
+  .window {
+    height: 100px;
+    background-size: contain;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 320px) {
+  h1 {
+    font-size: 6rem;
+    line-height: 10rem;
+  }
+
+  .container h3 {
+    font-size: 2.7rem;
+  }
+
+  .discover {
+    text-align: center;
+  }
+
+  .flexContainers h3 {
+    font-size: 2.2rem;
+  }
+
+  .yellowCircle {
+    top: 20px;
+  }
+
+  .window {
+    height: 100px;
+    background-size: contain;
+  }
 }
 @media (max-width: 940px) {
-  .contactHeader h1 {
+  .contactHeader {
     height: auto;
-    font-size: 10rem;
+  }
+  .contactHeader h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+    padding: 125px 0 0 125px;
+    height: 400px;
+    width: 80%;
+  }
+
+  .contactFieldset {
+    top: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .contactFieldset {
+    right: 25px;
+  }
+  .contactFieldset .flexContainer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contactFieldset .flexContainer input[type=text],
+.contactFieldset .flexContainer input[type=email] {
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    padding: 40px 0 20px 0;
+  }
+  .contactFieldset .flexContainer input[type=email] {
+    margin-left: 31px;
+  }
+}
+@media (max-width: 480px) {
+  .contactHeader {
+    background-size: auto;
+  }
+  .contactHeader i {
+    position: absolute;
+    color: #f8e71c;
+    font-size: 3rem;
+    top: 20px;
+    right: 20px;
+  }
+  .contactHeader h1 {
+    font-size: 6rem;
+  }
+
+  .social i {
+    padding-right: 10px;
+  }
+
+  .email .flexContainer:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .contactFieldset {
+    top: 0;
+    right: 0;
+    position: relative;
+    width: 80%;
+  }
+
+  input[type=text],
+input[type=email] {
+    margin: 0;
+    padding: 0;
+  }
+
+  .email .flexContainer .emailContainer {
+    width: 50%;
+  }
+
+  .contactFieldset .flexContainer input[type=text] {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .contactHeader h1 {
+    padding: 125px 0 0 75px;
+  }
+
+  .contactFieldset button {
+    margin-left: 20px;
+  }
+
+  .email .flexContainer .emailContainer {
+    width: 69%;
+  }
+
+  .social i {
+    padding-right: 30px;
   }
 }
 @media (max-width: 940px) {
@@ -1079,5 +1218,61 @@ fieldset button {
 
   .blogFooter {
     margin-top: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .contactNav ul {
+    display: none;
+  }
+
+  .blogging {
+    height: 100vw;
+    background-size: auto;
+    position: relative;
+  }
+  .blogging i {
+    color: #f8e71c;
+    font-size: 3rem;
+    right: 0;
+    position: absolute;
+    padding: 20px 20px 0 0;
+  }
+  .blogging h1 {
+    font-size: 8rem;
+    margin: 0 auto;
+    bottom: 100px;
+  }
+
+  .mission {
+    padding-top: 100px;
+  }
+  .mission .missionContainer .jeremy img,
+.mission .missionContainer .julia img {
+    height: 25%;
+  }
+}
+@media (max-width: 320px) {
+  .blogging h1 {
+    left: 80px;
+  }
+
+  .mission .missionContainer .jeremy img,
+.mission .missionContainer .julia img {
+    height: 15%;
+    padding-right: 10px;
+  }
+
+  .julia .jj,
+.jeremy .jj {
+    font-size: 2.4rem;
+  }
+
+  .missionContainer .blogFieldset .flexContainer input[type=text],
+.missionContainer .blogFieldset .flexContainer input[type=email] {
+    width: 100%;
+  }
+
+  .blogFieldset textarea {
+    width: 100%;
   }
 }
