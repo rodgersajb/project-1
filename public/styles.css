@@ -275,6 +275,10 @@ h3 {
   font-weight: bold;
 }
 
+*:focus {
+  outline: 0px none transparent;
+}
+
 footer {
   background: black;
   color: white;
