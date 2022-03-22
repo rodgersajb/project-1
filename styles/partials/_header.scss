@@ -1,147 +1,133 @@
-
 .contentContainer {
-    display:flex;
-    width: 50%;
-    justify-content: space-evenly;
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
 }
 
 .headerNav {
-    display: flex;
-    align-items: center;
-    li {
-        padding: 10px 0 5px 30px;
-    }
-    
+  display: flex;
+  align-items: center;
+  li {
+    padding: 10px 0 5px 30px;
+  }
 }
 
 .headerNav li a {
-    padding: 20px;
-    text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.4rem;
-    color: white;
-    list-style: none;
-    text-transform: uppercase;
-    margin-top: 10px;
-    cursor: pointer;
-    &:focus,
-    &:hover {
+  padding: 20px;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4rem;
+  color: white;
+  list-style: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  &:focus,
+  &:hover {
     color: $secondary;
-    
-    
-}
-
+  }
 }
 
 a:focus,
 a:hover {
-    color: $secondary;
-    
+  color: $secondary;
 }
 
 a {
-    transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 header {
-    background-image: url(/images/home-image-1.jpg);
-    background-position: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
-    z-index: 0;
-    .hamburger {
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        right: 0;
-        color: #fff;
-        i {
-            color: #fff;
-            font-size: 2rem;
-        }
+  background-image: url(/images/home-image-1.jpg);
+  background-position: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  z-index: 0;
+  .hamburger {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    i {
+      color: #fff;
+      font-size: 2rem;
     }
-    
-    
-    
+  }
 }
 
 .headerNav li:first-child {
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-    font-size: 3rem;
-    text-decoration: none;
-    margin: 0;
-    list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+  margin: 0;
+  list-style: none;
 }
 
 h1 {
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16.6rem;
-    margin: 249px 385px;
-    line-height: 14rem;
-    z-index: 40;
-    
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16.6rem;
+  margin: 249px 385px;
+  line-height: 14rem;
+  z-index: 40;
 }
 
 .heading {
-    color: $secondary;
+  color: $secondary;
 }
 
 .indexHeader {
-    position: relative;
-    .indexImg {
-        position: absolute;
-        top: 190px;
-        right: 0;
-        
-    }
+  position: relative;
+  .indexImg {
+    position: absolute;
+    top: 190px;
+    right: 0;
+  }
 }
 
 // BLOG PAGE
 
 .blogging {
-    background-image: url(/images/blog-header-1.jpg);
-    height: 500px;
-    background-repeat: none;
-    background-size: contain;
-    position: relative;
-    h1 {
-        margin: 0;
-        color: $secondary;
-        left: 143px;
-        bottom: 118px;
-        font-size: 11rem;
-        position: absolute;
-        
-    }
-    
+  background-image: url(/images/blog-header-1.jpg);
+  height: 500px;
+  background-repeat: none;
+  background-size: contain;
+  position: relative;
+  h1 {
+    margin: 0;
+    color: $secondary;
+    left: 143px;
+    bottom: 118px;
+    font-size: 11rem;
+    position: absolute;
+  }
 }
 
 .headerNav {
-    // background-color: black;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    padding-left: 50px;
+  // background-color: black;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-left: 50px;
 }
 
 // CONTACT NAV
 
 .contactHeader {
-    background-image: url(/images/contact-header-1.jpg);
-    background-size: contain; 
-    position: relative;
-    h1 {
-        margin: 0;
-        width: 35%;
-        font-size: 11rem;
-        color: $secondary;
-        padding: 250px 0 0 125px;
-    }
+  background-image: url(/images/contact-header-1.jpg);
+  background-size: contain;
+  position: relative;
+  h1 {
+    margin: 0;
+    width: 35%;
+    font-size: 11rem;
+    color: $secondary;
+    padding: 250px 0 0 125px;
+  }
 }
 
 .contactNav ul {
-    background-color: black;
-
+  background-color: black;
 }
