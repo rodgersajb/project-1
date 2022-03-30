@@ -44,38 +44,3 @@ theX.addEventListener('click', function(event) {
 })
 
 console.log(theX)
-// let isNavOpen = false;
-// const slideOutNav = document.querySelector('.slideOutNav');
-// const slideOutList = document.querySelector('.slideOutList');
-
-// function navOpen () { isNavOpen = true; slideOutList.classList.remove('.hide')};
-
-// function navClose () { isNavOpen = false; slideOutList.classList.add('.hide')};
-
-// document.addEventListener('click', (event) => {
-//     navClose();
-// })
-
-// slideOutNav.addEventListener('click', function(){
-//     if (isNavOpen) {
-//         navClose();
-//     } else {
-//         navOpen();
-//     }
-//     }
-// )
-
-
-
-    
-    
-
-    
-    
-
-
-
-
-
-
-// Once user clicks hamburger icon, slideOutNav will appear 
