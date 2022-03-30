@@ -279,6 +279,61 @@ h3 {
   outline: 0px none transparent;
 }
 
+.slideOutNav {
+  position: relative;
+}
+.slideOutNav .x {
+  font-size: 3rem;
+  color: #f8e71c;
+  font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  visibility: hidden;
+  z-index: 50;
+}
+
+.slideOutList {
+  list-style: none;
+  position: absolute;
+  right: -300px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.slideOutList li:first-child {
+  color: white;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.slideOutList li {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.slideOutList li a {
+  color: white;
+  text-decoration: none;
+  z-index: 99;
+}
+.slideOutList li a:focus, .slideOutList li a:hover {
+  color: #f8e71c;
+}
+
+.slideOutList .hide {
+  display: none;
+}
+
 footer {
   background: black;
   color: white;
@@ -942,7 +997,7 @@ fieldset button {
 }
 @media (max-width: 480px) {
   header {
-    height: auto;
+    height: 100vh;
   }
   header .headerNav {
     display: none;

@@ -48,3 +48,66 @@ h3 {
 }
 
 *:focus {outline:0px none transparent;}
+
+.slideOutNav {
+    position: relative;
+    .x  {
+        font-size: 3rem;
+        color: $secondary;
+        font-family: $headingFont;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        visibility: hidden;
+        z-index: 50;
+    }
+    
+    
+    
+}
+
+
+
+.slideOutList {
+    list-style: none;
+    position: absolute;
+    right: -300px; 
+    font-family: $headingFont;
+    font-size: 3rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-in-out;
+    
+    
+    
+    li:first-child {
+        color: white;
+        font-weight: bold;
+        font-size: 5rem;
+        
+        
+    }
+    li {
+        padding-top: 30px;
+        display: flex;
+       
+    
+        a {
+            color: white;
+            text-decoration: none;
+            z-index: 99;
+            &:focus,
+            &:hover {
+                color: $secondary;
+            }
+            
+            
+        }
+    }
+
+}
+
+.slideOutList .hide {
+    display: none;
+}
